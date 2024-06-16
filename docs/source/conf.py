@@ -3,11 +3,11 @@
 # -- Project information
 
 project = '老铁学习网'
-copyright = '2024, chitie'
-author = 'Chitie'
+copyright = '2024, ChiTie'
+author = 'ChiTie'
 
 release = '0.1'
-version = '0.1.0'
+version = '0.2.0'
 
 # -- General configuration
 

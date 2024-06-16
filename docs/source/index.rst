@@ -17,6 +17,6 @@
 
    
    fluidDynamic
-   声学
+   coding
    材料力学
    编程学习
