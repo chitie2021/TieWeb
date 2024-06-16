@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = '老铁学习网'
+copyright = '2024, chitie'
+author = 'Chitie'
 
 release = '0.1'
 version = '0.1.0'

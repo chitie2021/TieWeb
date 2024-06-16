@@ -1,9 +1,9 @@
-Usage
+流体力学
 =====
 
-.. _installation:
+.. _prewords:
 
-Installation
+流体力学概述
 ------------
 
 To use Lumache, first install it using pip:
