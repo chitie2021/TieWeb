@@ -4,7 +4,7 @@
 **该主页为个人学习记录目的作为第一准则，如有冒犯请随时以邮件形式告知**。
 
 
-查看下列目录，如 :doc:`fluidDynamic` 部分以获取自己需要的信息, 包括如 :ref:`introduction` 。
+查看下列目录，如 :doc:`fluidDynamic` 部分以获取自己需要的信息, 包括如 :ref:`turbulence` 。
 
 .. note::
 

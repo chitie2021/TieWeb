@@ -12,6 +12,7 @@ To use Lumache, first install it using pip:
 
    (.venv) $ pip install lumache
 
+.. _turbulence:
 
 湍流
 ----------------
