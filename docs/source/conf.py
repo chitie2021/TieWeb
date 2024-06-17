@@ -34,5 +34,10 @@ mathjax_path = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?
 
 html_theme = 'sphinx_rtd_theme'
 
+# --隐藏首页的latest字符
+html_css_files = [
+    'css/custom.css',
+]
+
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
