@@ -29,7 +29,7 @@
 
 .. math::
 
-   \\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\mathbf{u}) = 0
+   \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{u}) = 0
 
 2. Navier-Stokes 方程（Navier-Stokes Equations）
 ~~~~~~~~~~~~~
@@ -37,7 +37,7 @@ Navier-Stokes 方程描述了流体的动量守恒。其形式为：
 
 .. math::
 
-   \\rho \\left( \\frac{\\partial \\mathbf{u}}{\\partial t} + \\mathbf{u} \\cdot \\nabla \\mathbf{u} \\right) = -\\nabla p + \\mu \\nabla^2 \\mathbf{u} + \\mathbf{f}
+   \rho \left( \frac{\partial \mathbf{u}}{\partial t} + \mathbf{u} \cdot \nabla \mathbf{u} \right) = -\nabla p + \mu \nabla^2 \mathbf{u} + \mathbf{f}
 
 3. 能量方程（Energy Equation）
 ~~~~~~~~~~~~~~
@@ -45,7 +45,7 @@ Navier-Stokes 方程描述了流体的动量守恒。其形式为：
 
 .. math::
 
-   \\frac{\\partial}{\\partial t} \\left( \\frac{1}{2} \\rho |\\mathbf{u}|^2 + \\rho e \\right) + \\nabla \\cdot \\left( \\left( \\frac{1}{2} \\rho |\\mathbf{u}|^2 + \\rho e + p \\right) \\mathbf{u} \\right) = \\nabla \\cdot (k \\nabla T) + \\Phi
+   \frac{\partial}{\partial t} \left( \frac{1}{2} \rho |\mathbf{u}|^2 + \rho e \right) + \nabla \cdot \left( \left( \frac{1}{2} \rho |\mathbf{u}|^2 + \rho e + p \right) \mathbf{u} \right) = \nabla \cdot (k \nabla T) + \Phi
 
 其中：
  - \\(\\rho\\) 是流体密度
