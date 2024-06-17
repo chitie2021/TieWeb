@@ -47,15 +47,15 @@ Navier-Stokes 方程描述了流体的动量守恒。其形式为：
     \\frac{\\partial}{\\partial t} \\left( \\frac{1}{2} \\rho |\\mathbf{u}|^2 + \\rho e \\right) + \\nabla \\cdot \\left( \\left( \\frac{1}{2} \\rho |\\mathbf{u}|^2 + \\rho e + p \\right) \\mathbf{u} \\right) = \\nabla \\cdot (k \\nabla T) + \\Phi
 
 其中：
-- \\(\\rho\\) 是流体密度
-- \\(\\mathbf{u}\\) 是速度向量
-- \\(p\\) 是压力
-- \\(\\mu\\) 是动力粘度
-- \\(\\mathbf{f}\\) 是体积力（如重力）
-- \\(e\\) 是内能
-- \\(k\\) 是热传导系数
-- \\(T\\) 是温度
-- \\(\\Phi\\) 是粘性耗散函数
+ - \\(\\rho\\) 是流体密度
+ - \\(\\mathbf{u}\\) 是速度向量
+ - \\(p\\) 是压力
+ - \\(\\mu\\) 是动力粘度
+ - \\(\\mathbf{f}\\) 是体积力（如重力）
+ - \\(e\\) 是内能
+ - \\(k\\) 是热传导系数
+ - \\(T\\) 是温度
+ - \\(\\Phi\\) 是粘性耗散函数
 
 以下是这三个方程在 Python 中的表示：
 

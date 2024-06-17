@@ -9,7 +9,6 @@
 编程学习内容按照语言分为python和C++。
 
 
-.. autosummary::
-   :toctree: generated
+.. toctree::
 
    pythonLearning
