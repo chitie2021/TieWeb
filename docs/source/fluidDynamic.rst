@@ -20,20 +20,14 @@
 ~~~~~~~~~~~
 连续性方程描述了流体的质量守恒。对于不可压缩流体，其形式为：
 
-.. math::
-
-    \\nabla \\cdot \\mathbf{u} = 0
+:math:`\\nabla \\cdot \\mathbf{u}`
 
 
 对于可压缩流体，其形式为：
 
-\\documentclass{article}
-\\usepackage{amsmath}
-\\begin{document}
-\\[
-\\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\mathbf{u}) = 0
-\\]
-\\end{document}
+.. math::
+
+    \\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\mathbf{u}) = 0
 
 2. Navier-Stokes 方程（Navier-Stokes Equations）
 ~~~~~~~~~~~~~
