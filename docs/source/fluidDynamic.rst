@@ -22,7 +22,7 @@
 
 .. math::
 
-   \\nabla \\cdot \\mathbf{u} = 0
+   \nabla \cdot \mathbf{u} = 0
 
 
 对于可压缩流体，其形式为：
