@@ -22,13 +22,18 @@
 
 .. math::
 
-    \\\\nabla \\\\cdot \\\\mathbf{u} = 0
+    \\nabla \\cdot \\mathbf{u} = 0
+
 
 对于可压缩流体，其形式为：
 
-.. math::
-
-    \\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\mathbf{u}) = 0
+\\documentclass{article}
+\\usepackage{amsmath}
+\\begin{document}
+\\[
+\\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\mathbf{u}) = 0
+\\]
+\\end{document}
 
 2. Navier-Stokes 方程（Navier-Stokes Equations）
 ~~~~~~~~~~~~~
