@@ -1,9 +1,8 @@
-Template for the Read the Docs tutorial
+欢迎来到老铁学习网！
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+最初的模板来自于Read the docs，你也可以把我这个在github上存为自己的模板。
 
-Read the tutorial here:
+下面是rtd的:案例网址：
 
 https://docs.readthedocs.io/en/stable/tutorial/
