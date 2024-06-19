@@ -19,5 +19,6 @@
 
    
    fluidDynamic
+   engineeringInfo
    codeLearning
  
