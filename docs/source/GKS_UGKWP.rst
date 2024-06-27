@@ -41,8 +41,8 @@ GKS通常采用有限体积法（FVM）进行离散化。基本步骤如下：
    \mathrm{Kn} = \frac{\lambda}{L}
 
 其中：
-- \\(\\lambda\\) 表示分子平均自由程（Mean free path）
-- L 表示特征长度（Characteristic length）
+ - \\(\\lambda\\) 表示分子平均自由程（Mean free path）
+ - L 表示特征长度（Characteristic length）
 
 GKS方程和NS方程的本质区别
 ^^^^^^^^^^^^^^^
