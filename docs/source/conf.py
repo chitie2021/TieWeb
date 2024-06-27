@@ -34,6 +34,7 @@ mathjax_path = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?
 
 html_theme = 'sphinx_rtd_theme'
 
+
 # --隐藏首页的latest字符
 html_css_files = [
     'css/custom.css',
@@ -43,4 +44,10 @@ html_css_files = [
 epub_show_urls = 'footnote'
 
 # --隐藏“在GitHub上编辑”链接
-html_show_sourcelink = False
+# html_show_sourcelink = False
+
+html_theme_options = {
+    'display_github': False,
+}
+
+
