@@ -41,3 +41,6 @@ html_css_files = [
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# --隐藏“在GitHub上编辑”链接
+html_show_sourcelink = False
