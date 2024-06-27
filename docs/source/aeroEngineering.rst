@@ -180,10 +180,13 @@
 .. math::
 
    F = \alpha F_0
+
+.. math::
+
    m = \beta m_0
 
 其中：
- - \\(\\alpha\\) 为飞行中某时刻的发动机安装推力与海平面静推力 :math:`F_0`之比；
+ - \\(\\alpha\\) 为飞行中某时刻的发动机安装推力与海平面静推力 \\(F_0\\)之比；
  - \\(\\beta\\) 为瞬时重量系数。
 
 则，主管方程则可写为：
@@ -191,6 +194,9 @@
 .. math::
 
    \frac{F_0}{m_0 g} = \frac{\beta}{\alpha} {\frac{D+R}{\beta m_0 \cdot g} + \frac{1}{v} \frac{d}{dt} (h + \frac{v^2}{2g})}
+
+.. math::
+
    D = q S \cdot C_D = q S \cdot (K_1 (C_L)^2 + K_2 C_L + C_D0)
 
 其中：
@@ -242,18 +248,27 @@
 .. math::
 
    \alpha_{mil} = 0.72{0.88 + 0.245( |Ma - 1.6 | )^{1.4}} \sigma^{0.7}
+
+.. math::
+
    \alpha_{max} = {0.94 + 0.38( Ma - 0.4 )^2} \sigma ^0.7
 
 3. 带加力的先进涡轮喷气发动机
 
 .. math::
 
-   \alpha_mil = 0.76{0.907 + 0.262( |Ma - 0.5 | )^{1.5}} \sigma^{0.7}
-   \alpha_max = {0.952 + 0.3( Ma - 0.4 )^2} \sigma^{0.7}
+   \alpha_{mil} = 0.76{0.907 + 0.262( |Ma - 0.5 | )^{1.5}} \sigma^{0.7}
+
+.. math::
+
+   \alpha_{max} = {0.952 + 0.3( Ma - 0.4 )^2} \sigma^{0.7}
 
 4. 先进的螺旋桨发动机
 
 .. math::
 
    \alpha = \sqrt{\sigma} \quad Ma \leqslant 0.1
+
+.. math::
+
    \alpha = \frac{0.12}{Ma + 0.02} \sqrt{\sigma} \quad 0.1< Ma < 0.8
