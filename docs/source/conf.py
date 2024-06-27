@@ -6,8 +6,8 @@ project = '老铁学习网'
 copyright = '2024, ChiTie'
 author = 'ChiTie'
 
-release = '0.1'
-version = '0.2.0'
+release = '0.2'
+version = '0.2.26'
 
 # -- General configuration
 
@@ -48,6 +48,10 @@ epub_show_urls = 'footnote'
 
 html_theme_options = {
     'display_github': False,
+}
+
+html_context = {
+    "display_github": False,
 }
 
 
