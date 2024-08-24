@@ -199,6 +199,8 @@ Python的缺点
 
     x, y, z = 0, 0, 0
 
+数
+------------------
 
 常量
 ~~~~~~~~~~~~~~~~~~~
@@ -208,4 +210,39 @@ Python程序员会使用全大写来指出应将某个变量视为常量，其�
 .. code-block:: python
 
     MAX_CONNECTIONS = 5000
+
+列表
+------------------
+
+列表由一系列按特定顺序排列的元素组成。在Python中使用（[]）表示列表，并用逗号分隔其中的元素。
+
+.. code-block:: python
+
+    bicycles = ['trek','cannondale','redline','specialized']
+    print(bicycles)
+  
+打印的结果是
+
+::
+
+    ['trek','cannondale','redline','specialized']
+
+同时，列表是有序集合，因此有
+
+.. code-block:: python
+
+    bicycles = ['trek','cannondale','redline','specialized']
+    print(bicycles[0])
+
+这样就可以根据索引得到列表中的第一个元素，即
+
+::
+
+    trek
+
+.. note::
+
+   注意：索引是从 0 开始而不是从 1 开始。同时，最后一个元素可以用 -1 来索引。
+
+
 
