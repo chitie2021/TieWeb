@@ -244,5 +244,106 @@ Python程序员会使用全大写来指出应将某个变量视为常量，其�
 
    注意：索引是从 0 开始而不是从 1 开始。同时，最后一个元素可以用 -1 来索引。
 
+组织列表
+-----------------------
 
+使用方法sort()对列表永久排序
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Python可以使用sort()永久地修改列表元素的排列顺序。比如有汽车列表：
+
+.. code-block:: python
+
+    cars = ['bmw','audi','toyota','subaru']
+
+我们使用sort()命令
+
+.. code-block:: Python
+
+    cars.sort()
+    print(cars)
+
+我们可以得到根据按照字母顺序排列的列表
+
+.. code-block:: python
+
+    ['audi','bmw','subaru','toyota']
+
+同时，我们也可以让字母按照逆序来排列，只需要向sort()方法传递参数reverse=True即可
+
+.. code-block:: python
+
+    cars = ['bmw','audi','toyota','subaru']
+    cars.sort(reverse=True)
+    print(cars)
+
+这样，我们得到的即为逆序排列的列表
+
+.. code-block:: python
+
+    ['toyota','subaru','bmw','audi']
+
+使用函数sorted()对列表临时排序
+~~~~~~~~~~~~~~~~~~~~~~
+
+使用函数sorted()可以保留列表元素原来的排列顺序，并以特定的顺序呈现它们。
+
+.. code-block:: python
+
+    cars = ['bmw','audi','toyota','subaru']
+    print(sorted(cars))
+    print(cars)
+
+这两段的输出分别是
+
+.. code-block:: python
+
+    ['audi','bmw','subaru','toyota']
+    ['bmw','audi','toyota','subaru']
+
+可以看出列表元素的顺序并没有发生改变，但是我们用特定顺序呈现了它们。当然我们也可以使用函数reverse=True来逆序排列。
+
+倒着打印列表
+~~~~~~~~~~~~~~~~~~~~~~~
+
+要反着打印列表，可以使用方法reverse()。
+
+.. code-block:: python
+
+    cars = ['bmw','audi','toyota','subaru']
+    print(cars)
+
+    cars.reverse()
+    print(cars)
+
+这样可以得到如下输出
+
+.. code-block:: python
+
+    ['bmw','audi','toyota','subaru']
+    ['subaru','toyota','audi','bmw']
+
+.. note::
+
+   注意：reverse()不是按照与字母顺序相反的顺序来排列列表元素，而只是反转列表元素的排列顺序，同时该方法也是永久性的修改列表元素的排列顺序。
+
+确定列表的长度
+~~~~~~~~~~~~~~~~~~~
+
+使用len()可以快速获取列表的长度。
+
+::
+
+    >>> cars = ['bmw','audi','toyota','subaru']
+    >>> len(cars)
+
+输出如下
+
+::
+
+    4
+
+.. note::
+
+   注意：Python计算列表元素长度时从1开始，因此确定列表长度时，你应该不会遇到差一错误。
 
