@@ -577,3 +577,29 @@ Python将不能修改的值称为不可变的，而不可变的列表被称为�
 
 if语句
 ==================
+
+简单示例
+-------------
+
+.. code-block:: python
+
+        cars = ['audi', 'bmw', 'subaru', 'toyota']
+
+        for car in cars:
+            if car == 'bmw':
+                print(car.upper())
+
+            else:
+                print(car.title())
+
+得到的输出如下
+
+.. code-block:: python
+
+    Audi
+    BMW
+    Subaru
+    Toyota
+
+条件测试
+-------------
