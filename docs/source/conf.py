@@ -1,4 +1,4 @@
-# Configuration file for the Sphinx documentation builder.
+# Configuration for building my website using Sphinx.
 
 # -- Project information
 
@@ -25,6 +25,8 @@ intersphinx_mapping = {
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
 }
 intersphinx_disabled_domains = ['std']
+
+intersphinx_disabled_reftypes = []
 
 templates_path = ['_templates']
 

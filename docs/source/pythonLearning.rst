@@ -4,7 +4,7 @@ Python学习
 .. _introduction:
 
 Python语言概述
-----------------
+=================
 
 Python是一种高级、解释型、通用的编程语言，由Guido van Rossum于1991年首次发布。其设计哲学强调代码的可读性和简洁性，尤其是使用显式的缩进来划分代码块，这一特性使得Python代码显得干净且易于理解。
 
@@ -78,7 +78,7 @@ Python的缺点
    Python的多线程模型受到GIL的限制，多线程在CPU密集型任务中表现不佳。
 
 变量和简单数据类型
----------------
+===================
 
  - 变量的命名和使用：
 
@@ -210,6 +210,9 @@ Python程序员会使用全大写来指出应将某个变量视为常量，其�
 .. code-block:: python
 
     MAX_CONNECTIONS = 5000
+
+列表简介
+=================
 
 列表
 ------------------
@@ -348,10 +351,10 @@ Python可以使用sort()永久地修改列表元素的排列顺序。比如有�
    注意：Python计算列表元素长度时从1开始，因此确定列表长度时，应该不会遇到差一错误。
 
 操作列表
-------------------
+===================
 
 遍历整个列表
-~~~~~~~~~~~~~~~~~
+--------------------
 
 需要对列表中的每个元素都执行相同的操作时，可使用Python中的for循环。比如下方代码
 
@@ -368,6 +371,9 @@ Python可以使用sort()永久地修改列表元素的排列顺序。比如有�
         alice
         david
         carolina
+
+创建数值列表
+--------------------
 
 使用函数range()
 ~~~~~~~~~~~~~~~~~~~~~
@@ -486,7 +492,7 @@ Python函数range()可以轻松的生成一系列数。例如
 .. code-block:: python
 
         players = ['charles','martina','michael','florence','eli']
-        print("Here are the first three players on my teram:")
+        print("Here are the first three players on my team:")
         for player in players[:3]:
             print(player.title())
 
@@ -494,7 +500,7 @@ Python函数range()可以轻松的生成一系列数。例如
 
 ::
     
-    Here are the first three players on my teram:
+    Here are the first three players on my team:
     Charles
     Martina
     Michael
@@ -504,3 +510,70 @@ Python函数range()可以轻松的生成一系列数。例如
 
 我们可以通过同时省略起始索引和终止索引([:])来创建一个包含整个列表的切片。
 
+元组
+----------------
+
+Python将不能修改的值称为不可变的，而不可变的列表被称为元组。
+
+定义元组
+~~~~~~~~~~~~~~~~~~
+
+元组看起来像列表，但使用圆括号而非中括号来标识。定义元组后，就可以使用索引来访问其元素，就像访问列表元素一样。
+
+比如，
+
+.. code-block:: python
+
+        dimensions = ( 200 , 50 )
+        print(dimensions[0])
+        print(dimensions[1])
+
+输出如下
+
+.. code-block:: python
+
+        200
+        50
+
+同样，我们也可以使用for循环来遍历元组中的所有值
+
+.. code-block:: python
+
+        dimensions = ( 200 , 50 )
+        for dimension in dimensions:
+            print(dimension)
+
+输出同上一个代码块一样。
+
+.. note::
+
+    元组可以被重修赋值，但是不能被修改。
+
+如果想要修改元组中的变量，可以通过重新赋值的方式
+
+.. code-block:: python
+
+        dimensions = ( 200, 50 )
+        print("Original dimensions:")
+        for dimension in dimensions:
+            print(dimension)
+
+        dimensions = ( 400 , 100 )
+        print("\nModified dimensions:")
+        for dimension in dimensions:
+            print(dimension)
+
+输出如下
+
+.. code-block:: python
+
+        Original dimensions:
+        200
+        50
+        
+        Modified dimensions:
+        400
+        100
+
+if语句
+==================
