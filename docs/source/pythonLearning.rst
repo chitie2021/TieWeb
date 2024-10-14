@@ -603,3 +603,111 @@ if语句
 
 条件测试
 -------------
+
+每条if语句的核心都是一个值为True或False的表达式，这种表达式称为条件测试。
+
+比如 `==` 符号则为判断两侧是否相等的符号
+
+.. code-block:: python
+
+    car = 'bmw'
+    car == 'bmw'
+    True
+    car == 'audi'
+    False
+
+同样，还有 `!=` 来判断是否前面的值和该符号后边的值是否不等，如果不等则执行后续代码
+
+.. code-block:: python
+
+    requested_topping = 'mushrooms'
+
+    if requested_topping != 'anchovies':
+        print('Hold the anchovies!')
+
+输出为
+
+.. code-block:: python
+
+    Hold the anchovies!
+
+上述方法同样适用于数值，可以引申到符号 `>=` 和 `<=`，这些符号中间还可以穿插 `and` 或者 `or`来实现多个条件的同时判断。
+
+
+if语句
+----------------
+
+可以看下面代码进行理解
+
+.. code-block:: python
+
+    age = 19
+    if age >= 18:
+        print("You are old enough to vote!")
+        print("Have you vote yet?")
+    print("emmm")
+
+当 `age=19` 时，输出为
+
+.. code-block::
+
+    You are old enough to vote!
+    Have you vote yet?
+    emmm
+
+而当 `age=17` 时，输出为
+
+.. code-block::
+
+    emmm
+
+上段代码中的print("emmm")可以理解为
+
+.. code-block:: python
+
+    age = 19
+    if age >= 18:
+        print("You are old enough to vote!")
+        print("Have you vote yet?")
+    else:
+        print("emmm")
+
+当然，还可以用更复杂的形式
+
+.. code-block:: python
+
+    age = 19
+    if age >= 18 and age < 60:
+        print("You are old enough to vote!")
+        print("Have you vote yet?")
+    elif age >= 60:
+        print("Good year!")
+    else:
+        print("emmm")
+
+还可以通过 `elif` 实现更多的分段。
+
+对于 `for` 和 `if` 联用的方式可以参考下面的代码
+
+.. code-block:: python
+
+    available_toppings = ['mushrooms','olives','green peppers','pepperoni','pineapple','extra cheese']
+    requested_toppings = ['mushrooms','french fries','extra cheese']
+
+    for requested_topping in requested_toppings:
+        if requested_topping in available_toppings:
+            print(f"Adding {requested_topping}.")
+        else:
+            print(f"Sorry! We don't have {requested_topping}.")
+    print("\nFinished making your pizza!")
+
+这段代码的输出为
+
+.. code-block:: python
+
+    Adding mushrooms.
+    Sorry! We don't have french fries.
+    Adding extra cheese.
+
+    Finished making your pizza! 
+
