@@ -711,3 +711,97 @@ if语句
 
     Finished making your pizza! 
 
+字典
+==================
+
+使用字典
+---------------
+
+在Python中，字典是一系列键值对。每个键都与一个值相关联，你可使用键来访问相关联的值。在Python中，字典用放在花括号（{}）中的一系列键值对表示，如前面的示例所示：
+
+.. code-block:: python
+
+    alien_0 = {'color':'green','points': 5}
+    print(alien_0['color'])
+
+这样输出的就是 `color` 键对应的值
+
+.. code-block:: python
+
+    green
+
+当你想给上述的字典中添加键值对时，可以直接使用以下代码
+
+.. code-block:: python
+
+    alien_0['x_position'] = 0
+    alien_0['y_position'] = 25
+    print(alien_0)
+
+这样，输出就会变成
+
+.. code-block:: python
+
+    {'color':'green','points': 5,'x_position': 0,'y_position': 25}
+
+同时，当你想建立一个字典，但是不知道其中的键值对时，可以建立一个空字典，即
+
+.. code-block:: python
+
+    alien_0 = {}
+
+后面再用添加键值对的方式像这个字典中添加键值对。
+
+当然，字典中的值不是写死的，可以通过重新赋予键的值来进行替换，下面是一个示例
+
+.. code-block:: python
+
+    alien_0 = {'color':'yellow'}
+    alien_0['color']='green'
+
+如果不想要这个字典中的某个键值对，则可以使用 `del` 命令，比如
+
+.. code-block:: python
+
+    alien_0 = {'color':'green','points': 5}
+    del alien_0['points']
+    print(alien_0)
+
+这样就删除了字典alien_0中的 `points` 键值对，得到下面的结果
+
+.. code-block:: python
+
+    {'color':'green'}
+
+对于代码的结构来说，存储相似信息的字典一般的写法如下
+
+.. code-block:: python
+
+    favorite_languages = {
+        'jen':'python',
+        'sarah':'c',
+        'edward':'ruby',
+        'phil':'python',
+        }
+
+通过这样的结构，能够更好的阅读代码的信息
+
+对于查找字典中是否有我们需要的键值对时，可以使用 `get()`来访问值
+
+.. code-block:: python
+
+    alien_0 = {'color':'green','speed': 'slow'}
+
+    point_value = alien_0.get('points','No point value assigned')
+    print(point_value)
+
+这样，即使在字典中没有这个键也不会报错，输出是
+
+.. code-block:: python
+
+    No point value assigned
+
+如果 `points`后面没有第二个参数，则会输出 `None`。
+
+遍历字典
+---------------
