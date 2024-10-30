@@ -786,7 +786,7 @@ if语句
 
 通过这样的结构，能够更好的阅读代码的信息
 
-对于查找字典中是否有我们需要的键值对时，可以使用 `get()`来访问值
+对于查找字典中是否有我们需要的键值对时，可以使用 `get()` 来访问值
 
 .. code-block:: python
 
@@ -801,7 +801,195 @@ if语句
 
     No point value assigned
 
-如果 `points`后面没有第二个参数，则会输出 `None`。
+如果 `points` 后面没有第二个参数，则会输出 `None` 。
 
 遍历字典
 ---------------
+
+遍历这个词可以等价为 `for` 语法，根据下面的代码可以更好的理解这个功能
+
+.. code-block:: python
+
+    favorite_languages={
+        'jen':'python',
+        'sarah':'c',
+        'edward':'ruby',
+        'phil':'python',
+        }
+
+    for name, language in favorite_languages.item():
+        print(f"{name.title()}'s favorite language is {language.title()}.")
+    
+输出如下
+
+.. code-block:: python
+
+    Jen's favorite language is Python.
+    Sarah's favorite language is C.
+    Edward's favorite language is Ruby.
+    Phil's favorite language is Python.
+
+当 `for` 遍历字典时会默认遍历所有的键，因此
+
+.. code-block:: python
+
+    for name in favorite_languages:
+
+和
+
+.. code-block:: python
+
+    for name in favorite_languages.keys():
+
+是一样的。但是使用keys()可以让代码更容易理解。
+
+同时，字典中的键值对支持在读取时加入顺序命令 sorted(dictionary.keys())。
+
+如果想要遍历字典中所有的值，并且去除其中重复的值，可以采取将这些值放入一个集合(set)中
+
+.. code-block:: python
+
+    favorite_languages={
+        'jen':'python',
+        'sarah':'c',
+        'edward':'ruby',
+        'phil':'python',
+        }
+    
+    print("The following languages have been mentioned:")
+    for language in sorted(set(favorite_languages.values())):
+        print(language.title())
+
+加上了排序和集合的输出如下
+
+.. code-block:: python
+    
+    The following languages have been mentioned:
+    C
+    Python
+    Ruby
+
+嵌套
+---------------
+
+在列表中存储字典
+~~~~~~~~~~~~~~~
+
+将一系列字典存储在列表中，或将列表作为值存储在字典中，这就是嵌套。
+
+.. code-block:: python
+
+    aliens = []
+
+    for alien_number in range(30):
+        new_alien = {'color':'green','points':5,'speed':'slow'}
+        aliens.append(new_alien)
+
+    for alien in aliens[:5]:
+        print(alien)
+    print("...")
+
+    print(f"Total number of aliens: {len(aliens)}")
+
+这段代码的输出为
+
+.. code-block:: python
+
+    {'color': 'green', 'points': 5, 'speed': 'slow'}
+    {'color': 'green', 'points': 5, 'speed': 'slow'}
+    {'color': 'green', 'points': 5, 'speed': 'slow'}
+    {'color': 'green', 'points': 5, 'speed': 'slow'}
+    {'color': 'green', 'points': 5, 'speed': 'slow'}
+    ...
+    Total number of aliens: 30
+
+可以发现，我们向名为aliens的列表中添加了30次名为new_alien的字典，后面输出了aliens的前5个字典并打出了aliens列表的长度。
+
+在字典中存储列表
+~~~~~~~~~~~~~~~
+
+可以通过下面的代码对该功能进行理解
+
+.. code-block:: python
+
+    noddle = {
+        'noddle_type':['thick','wide']，
+        'noddle_taste':['acid','spicy','sweet']，
+        'noddle_addings':['pork','beef','lamb']
+        }
+    
+    print(f"We have several type of noddles :")
+    for noddleType in noodle['noddle_type']:
+        print("\t"+noddleType.title())
+    
+    print(f"We also have different tastes of noddles:")
+    for noddleTaste in noddle['noddle_taste']:
+        print("\t"+noddleTaste.title())
+
+    print(f"We also have a few addings of noddles:")
+    for noddleAdding in noddle['noddle_addings']:
+        print("\t"+noddleAdding.title())
+
+    print("So, which kind of noddle do you want to eat?")
+
+上边代码的输出为
+
+.. code-block:: python
+
+    We have several type of noddles :
+	Thick
+	Wide
+    We also have different tastes of noddles:
+	Acid
+	Spicy
+	Sweet
+    We also have a few addings of noddles:
+	Pork
+	Beef
+	Lamb
+    So, which kind of noddle do you want to eat?
+
+在字典中存储列表
+~~~~~~~~~~~~~~~
+
+可以通过下面的代码对该功能进行理解
+
+.. code-block:: python
+
+    points = {
+        'Lilei':{
+            'math':90,
+            'english':100,
+            'physic':75
+            },
+        'Hanmeimei':{
+            'math':77,
+            'english':90,
+            'physic':95
+            }
+        }
+
+    for name, point_subject in points.items():
+        print(f"\nName:{name}")
+        math_point = f"{point_subject['math']}"
+        english_point = f"{point_subject['english']}"
+        physic_point = f"{point_subject['physic']}"
+
+        print(f"\tMath point : {math_point.title()}")
+        print(f"\tEnglish point : {english_point.title()}")
+        print(f"\tPhysic point : {physic_point.title()}")
+
+上边代码的输出为
+
+.. code-block:: python
+
+    Name:Lilei
+	    Math point : 90
+	    English point : 100
+	    Physic point : 75
+
+    Name:Hanmeimei
+	    Math point : 77
+	    English point : 90
+	    Physic point : 95
+
